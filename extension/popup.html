@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <script src="popup.js" defer></script>
+</head>
+<body>
+  <div style="display: flex; gap: 2px; font-family: 'Courier New', Courier, monospace;">
+    <label for="phishing">Enabled:</label>
+    <input type="checkbox" name="phishing" id="phishing">
+  </div>
+  <div id="check" style="display: none;">
+    Checking Website for phishing...
+  </div>
+  <div id="good" style="display: none;">
+    This website is not phishing :D
+  </div>
+  <div id="bad" style="display: none;">
+    This website is phishing :(
+  </div>
+</body>
+</html>

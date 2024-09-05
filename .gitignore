@@ -1,1 +1,7 @@
 .venv/
+app/__pycache__/phishing.cpython-311.pyc
+models/sitedata/data/frequency.csv
+models/sitedata/data/PhiUSII.csv
+models/sitedata/data/tld.csv
+models/sitedata/data/top-1m.csv
+models/sitedata/data/top10milliondomains.csv

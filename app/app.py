@@ -1,11 +1,15 @@
 from flask import Flask, request, Response
+from flask_cors import CORS, cross_origin
 import phishing
 import json
 
 app = Flask(__name__)
+cors = CORS(app)
+app.config['CORS_HEADERS'] = 'Content-Type'
 
 
 @app.post('/phishing')
+@cross_origin()
 def is_phishing():
     body = request.json
     domain = phishing.prepare_domain(body)
